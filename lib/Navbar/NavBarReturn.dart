@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_webpage/main.dart';
 
-class Navbar extends StatelessWidget {
+class NavbarReturn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
@@ -26,12 +27,21 @@ class DesktopNavbar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
+            MaterialButton(
+              child: Icon(
+                Icons.arrow_back,
+                color: Colors.white,
+              ),
+              onPressed: () {
+                Navigator.popAndPushNamed(context, MyHomePage.routeName);
+              },
+            ),
             Text(
               "Sweven Montessori",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
-                  fontSize: 40),
+                  fontSize: 18),
             ),
             // Row(
             //   children: <Widget>[

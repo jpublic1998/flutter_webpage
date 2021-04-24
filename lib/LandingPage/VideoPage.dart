@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_webpage/ArticlePage/ArticleOne.dart';
 
-class LandingPage extends StatelessWidget {
-  List<Widget> pageChildren(double width, BuildContext context) {
+class VideoPage extends StatelessWidget {
+  List<Widget> pageChildren(double width) {
     return <Widget>[
       Container(
         width: width,
@@ -36,9 +35,7 @@ class LandingPage extends StatelessWidget {
               color: Colors.white,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(20.0))),
-              onPressed: () {
-                Navigator.popAndPushNamed(context, ArticleOne.routeName);
-              },
+              onPressed: () {},
               child: Padding(
                 padding: const EdgeInsets.symmetric(
                     vertical: 20.0, horizontal: 40.0),
@@ -68,11 +65,11 @@ class LandingPage extends StatelessWidget {
         if (constraints.maxWidth > 800) {
           return Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: pageChildren(constraints.biggest.width / 2, context),
+            children: pageChildren(constraints.biggest.width / 2),
           );
         } else {
           return Column(
-            children: pageChildren(constraints.biggest.width, context),
+            children: pageChildren(constraints.biggest.width),
           );
         }
       },
