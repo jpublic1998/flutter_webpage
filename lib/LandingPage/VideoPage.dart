@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-const _url = 'https://youtu.be/uC2rNlqqXNE';
+const _url = 'https://youtu.be/h9Q4zZS2v1k';
 
 void _launchURL() async =>
     await canLaunch(_url) ? await launch(_url) : throw 'Could not launch $_url';
@@ -17,22 +17,21 @@ class VideoPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.fromLTRB(0, 0, 0, 30),
               child: Text(
-                "Adapt, Improvise, Overcome",
+                "Here's a video",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 30.0,
                     color: Colors.white),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20.0),
-              child: Text(
-                //"We have taken each and every project handed over to dflksjad which has helped us achieve a high project success rate.",
-                //"What is common among the industrial revolution, world war and struggle for independence? The mentality. See, during those times you had to follow the ideology of the leaders relentlessly because that was the way to be rewarded with a better life. Go to do anything out of the norm and you would be faced with insurmountable resistance from the society who had already accepted the status quo. And changing the momentum of the masses is as difficult as plucking stars out of the bare sky. ",
-                "We have survived countless instances of events where the human species could have gone extinct. But here we are still, fighting yet another challenge. Pro-Activity, Agility and Forward-Thinking, absent in today's schooling curriculum, but present in our instincts and DNA will be the guiding light for our future.",
-                style: TextStyle(fontSize: 16.0, color: Colors.white),
-              ),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.symmetric(vertical: 20.0),
+            //   child: Text(
+            //     //"We have taken each and every project handed over to dflksjad which has helped us achieve a high project success rate.",
+            //     "What is common among the industrial revolution, world war and struggle for independence? The mentality. See, during those times you had to follow the ideology of the leaders relentlessly because that was the way to be rewarded with a better life. Go to do anything out of the norm and you would be faced with insurmountable resistance from the society who had already accepted the status quo. And changing the momentum of the masses is as difficult as plucking stars out of the bare sky. ",
+            //     style: TextStyle(fontSize: 16.0, color: Colors.white),
+            //   ),
+            // ),
             // Padding(
             //   padding: const EdgeInsets.symmetric(vertical: 20.0),
             //   child: Text(
